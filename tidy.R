@@ -16,6 +16,8 @@ tsla<-tsla %>%
     convert = TRUE
   )
 tsla
-tsla %>% 
+tsla<-tsla %>% 
   unite(col = "Date", Year,Month,Date)
+tsla
+write.csv(tsla, file = "C:/Users/nikag/Downloads/TSLA1.csv")
 
